@@ -30,7 +30,7 @@ public class Typography {
             String msg = "Hello " + username + " and welcome to notepad.";
 
             for(int a = 0; a < msg.length(); a++){
-                // getting keycode for current character and its keycode
+                // getting current character and its keycode for the keyEvent
                 char cur_char = msg.charAt(a);
                 int write = KeyEvent.getExtendedKeyCodeForChar(cur_char);
                 r.keyPress(write);
